@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/testconfig")
 public class ConfigTestController {
 
-	@Value("profile")
+	@Value("${profile}")
 	private String applicationProfile;
 	
 	@GetMapping("/getprofile")

@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: test #对应{application}
+      profile: dev  #{profile}
+      uri: http://localhost:8100
+      label: master
