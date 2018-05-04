@@ -9,6 +9,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>microservice-config-server</module>
+		<module>microservice-config-client</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
