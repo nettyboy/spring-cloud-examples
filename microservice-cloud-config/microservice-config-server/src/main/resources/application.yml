@@ -1,0 +1,20 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nettyboy/spring-cloud-examples.git
+          username: nettyboy
+          password: ningquan168
+          
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8100/eureka/
+      
