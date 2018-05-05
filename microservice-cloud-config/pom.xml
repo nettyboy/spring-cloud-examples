@@ -13,6 +13,7 @@
 		<module>microservice-config-server-eureka</module>
 		<module>microservice-config-server-bus</module>
 		<module>microservice-config-client-eureka</module>
+		<module>microservice-config-client-bus</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -28,7 +29,13 @@
 		<spring-cloud.version>Edgware.SR3</spring-cloud.version>
 	</properties>
 
-
+	<dependencies>
+		<!-- 添加到应用服务的监控 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+	</dependencies>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

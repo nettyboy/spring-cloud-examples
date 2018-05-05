@@ -22,6 +22,13 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
+		
+	<!--
+		spring-cloud-config-server依赖 spring-boot-starter-actuator
+	 	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency> -->
 		<!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
 		<!-- <dependency>
 			<groupId>com.rabbitmq</groupId>

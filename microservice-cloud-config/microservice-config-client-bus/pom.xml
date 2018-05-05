@@ -8,7 +8,7 @@
 		<artifactId>microservice-cloud-config</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>microservice-config-client-eureka</artifactId>
+	<artifactId>microservice-config-client-bus</artifactId>
 
 	<packaging>jar</packaging>
 

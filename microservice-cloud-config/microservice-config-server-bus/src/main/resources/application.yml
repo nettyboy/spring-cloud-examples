@@ -1,5 +1,7 @@
 server:
   port: 8200
+  
+#设置获取git仓库地址，应用名称
 spring:
   application:
     name: microservice-config-server
@@ -10,23 +12,26 @@ spring:
           uri: https://github.com/nettyboy/spring-cloud-examples.git
           username: nettyboy
           password: ningquan168
-  #rbbitmq配置
+    bus:
+      trace:
+        enabled: true #跟踪bus事件，这样在/bus/refresh端点被请求后，
+#                          #访问/trace，跟踪广播给那些端消息推送成功
+#rbbitmq配置
   rabbitmq:
     host: localhost
     port: 5762
     username: admin
     password: admin123
     
-#关闭安全验证 spring 1.5.X
+#关闭安全验证 acractor 1.5.X
 management:
   security:
     enabled: false
     
-    
+#注册中erueka-server
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7100/eureka/ #注册中erueka-server
-      
+      defaultZone: http://localhost:7100/eureka/ 
   instance:
     appname: microservice-config-server

@@ -10,6 +10,12 @@ spring:
         service-id: microservice-config-server #[new] config-server-application-name
   application:
     name: microservice-config-client
+
+  rabbitmq:
+    host: localhost
+    port: 5762
+    username: admin
+    password: admin123
     
 eureka:
   client:
