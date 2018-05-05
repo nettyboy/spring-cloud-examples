@@ -3,5 +3,5 @@ server:
 spring:
   application:
     name: microservice-config-client
-
-      
+    
+management.security.enabled: false

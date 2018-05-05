@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      name: test #对应{application}
+      profile: dev  #{profile}
+      #uri: http://localhost:8100 #如果添加spring-cloud-config-server地址，需要指定在bootstrap.yml中
+      label: master
+      discovery:
+        enabled: true # [new]开启config服务发现的支持
+        service-id: microservice-config-server #[new] config-server-application-name
+  application:
+    name: microservice-config-client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7100/eureka/ # [new]注册中erueka-server
+      
+#以上标记 [new] 需要放到bootstrap.yml中
