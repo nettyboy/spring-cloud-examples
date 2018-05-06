@@ -20,3 +20,7 @@ eureka:
       
   instance:
     appname: microservice-config-server
+    
+#指定对称加密因子
+encrypt:
+  key: zhht2018

@@ -8,8 +8,9 @@ spring:
       server:
         git:
           uri: https://github.com/nettyboy/spring-cloud-examples/
-              #https://github.com/nettyboy/{application} 这里的application 指的是repo，如果每个项目一个repo配置可以在这里指定
-          search-paths: '{application}' #根据应用不同可以根据应用名称指定占位符
+          search-paths:
+          - microserviceapp/mydeep-path #地址可以多层目录，不建议使用
+          - microserviceaipark #search-paths 可以有多个，依次检索
           username: nettyboy
           password: ningquan168
           

@@ -11,12 +11,15 @@
 		
 		<module>microservice-config-client</module>
 		<module>microservice-config-client-eureka</module>
+		<module>microservice-config-client-authc</module>
 		<module>microservice-config-client-bus</module>
 		<module>microserviceapp</module>
 		<module>microservice-config-server-eureka</module>
 		<module>microservice-config-server-bus</module>
 		<module>microservice-config-server</module>
 		<module>microservice-config-server-pattern</module>
+		<module>microservice-config-server-encrypt</module>
+		<module>microservice-config-server-authc</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

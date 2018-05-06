@@ -1,0 +1,4 @@
+1.安装JCE
+2,调用 http://localhost:8100/encrypt -d mycontent  ，获取加密结果
+3,调用 http://localhost:8100/decrypt -d 加密串，获取解密明文
+4,config-client 不需要修改

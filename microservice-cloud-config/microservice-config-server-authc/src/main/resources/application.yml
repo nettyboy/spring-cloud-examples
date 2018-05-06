@@ -1,5 +1,14 @@
 server:
   port: 8100
+  
+#设置spring-config-server安全认证用户名和密码
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: admin123
+    
 spring:
   application:
     name: microservice-config-server

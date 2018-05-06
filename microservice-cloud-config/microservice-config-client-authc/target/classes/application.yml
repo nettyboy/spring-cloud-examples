@@ -1,0 +1,13 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: microservice-config-client
+    
+management.security.enabled: false
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7100/eureka/ #注册中erueka-server
