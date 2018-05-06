@@ -8,12 +8,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>microservice-config-server</module>
+		
 		<module>microservice-config-client</module>
-		<module>microservice-config-server-eureka</module>
-		<module>microservice-config-server-bus</module>
 		<module>microservice-config-client-eureka</module>
 		<module>microservice-config-client-bus</module>
+		<module>microserviceapp</module>
+		<module>microservice-config-server-eureka</module>
+		<module>microservice-config-server-bus</module>
+		<module>microservice-config-server</module>
+		<module>microservice-config-server-pattern</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

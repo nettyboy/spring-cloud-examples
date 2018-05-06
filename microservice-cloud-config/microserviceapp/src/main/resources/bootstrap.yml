@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+     # name: test #对应{application}
+     # profile: dev  #{profile}
+      uri: http://localhost:8100 #如果添加spring-cloud-config-server地址，需要指定在bootstrap.yml中
+      label: master
+  application:
+    name: microserviceapp
