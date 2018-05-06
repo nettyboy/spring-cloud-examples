@@ -1,5 +1,5 @@
 server:
-  port: 8200
+  port: 8100
 spring:
   application:
     name: microservice-config-server
@@ -7,8 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/nettyboy/spring-cloud-examples/{application}-{profile}
-          #search-paths:  
+          uri: https://github.com/nettyboy/spring-cloud-examples/microservice-cloud-config/
+#          search-paths:
+#          - microservice-cloud-config
           username: nettyboy
           password: ningquan168
           
