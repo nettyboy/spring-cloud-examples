@@ -7,9 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/nettyboy/spring-cloud-examples/microservice-cloud-config/
-#          search-paths:
-#          - microservice-cloud-config
+          uri: https://github.com/nettyboy/spring-cloud-examples/
+          search-paths:
+          - microserviceapp
           username: nettyboy
           password: ningquan168
           
