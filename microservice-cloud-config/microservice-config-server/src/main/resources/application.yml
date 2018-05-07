@@ -9,7 +9,7 @@ spring:
         git:
           uri: https://github.com/nettyboy/spring-cloud-examples.git
           username: nettyboy
-          password: ningquan168
+          password: XXX
           
 eureka:
   client:

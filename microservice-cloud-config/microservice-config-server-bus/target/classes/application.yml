@@ -11,7 +11,7 @@ spring:
         git:
           uri: https://github.com/nettyboy/spring-cloud-examples.git
           username: nettyboy
-          password: ningquan168
+          password: xxxx
     bus:
       trace:
         enabled: true #跟踪bus事件，这样在/bus/refresh端点被请求后，
