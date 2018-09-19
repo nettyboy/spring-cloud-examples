@@ -14,8 +14,16 @@ public class ConfigTestController {
 	@Value("${profile}")
 	private String applicationProfile;
 	
+	@Value("${profile_config}")
+	private String profileConfig;
+	
 	@GetMapping("/getprofile")
 	public String getProfile() {
 		return applicationProfile;
+	}
+	
+	@RequestMapping("/profileConfig")
+	public String getProfileConfig() {
+	    return profileConfig;
 	}
 }

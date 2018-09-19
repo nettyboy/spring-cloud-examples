@@ -1,0 +1,10 @@
+server:
+  port: 7100
+spring:
+  application:
+    name: microservice-cloud-eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7100/eureka/
+      

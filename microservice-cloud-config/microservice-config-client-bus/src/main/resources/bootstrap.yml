@@ -12,10 +12,10 @@ spring:
     name: microservice-config-client
 
   rabbitmq:
-    host: localhost
-    port: 5762
-    username: admin
-    password: admin123
+    host: 10.110.60.73
+    port: 5672
+    username: ningquan
+    password: ningquan
     
 eureka:
   client:

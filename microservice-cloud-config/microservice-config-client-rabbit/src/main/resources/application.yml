@@ -1,0 +1,14 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: microservice-config-client-rabbit
+
+  rabbitmq:
+    host: 10.110.60.73
+    port: 5672
+    username: ningquan
+    password: ningquan
+    
+
+management.security.enabled: false

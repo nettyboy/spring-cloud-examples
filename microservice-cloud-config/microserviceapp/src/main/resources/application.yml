@@ -2,3 +2,5 @@ server:
   port: 9100
     
 management.security.enabled: false
+
+profile_config: aaaaaaaaaaaaaa

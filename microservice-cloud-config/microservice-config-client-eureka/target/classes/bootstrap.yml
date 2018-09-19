@@ -9,7 +9,7 @@ spring:
         enabled: true # [new]开启config服务发现的支持
         service-id: microservice-config-server #[new] config-server-application-name
   application:
-    name: microservice-config-client
+    name: microservice-config-client-eureka
     
 eureka:
   client:

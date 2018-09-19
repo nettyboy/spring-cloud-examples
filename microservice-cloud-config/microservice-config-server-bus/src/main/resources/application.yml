@@ -18,10 +18,10 @@ spring:
 #                          #访问/trace，跟踪广播给那些端消息推送成功
 #rbbitmq配置
   rabbitmq:
-    host: localhost
-    port: 5762
-    username: admin
-    password: admin123
+    host: 10.110.60.73
+    port: 5672
+    username: ningquan
+    password: ningquan
     
 #关闭安全验证 acractor 1.5.X
 management:

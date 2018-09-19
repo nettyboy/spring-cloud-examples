@@ -9,8 +9,12 @@ spring:
         git:
           uri: https://github.com/nettyboy/spring-cloud-examples.git
           username: nettyboy
-          password: XXX
-          
+          password: ningquan168
+          force-pull: true
+          clone-on-start: true
+          delete-untracked-branches: true #避免删除git服务仓库，本地缓存不一致
+#          search-paths:
+#          - microserviceapp
 eureka:
   client:
     service-url:

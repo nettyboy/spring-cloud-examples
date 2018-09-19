@@ -13,6 +13,7 @@
 		<module>microservice-config-client-eureka</module>
 		<module>microservice-config-client-authc</module>
 		<module>microservice-config-client-bus</module>
+		<module>microservice-config-client-rabbit</module>
 		<module>microserviceapp</module>
 		<module>microservice-config-server-eureka</module>
 		<module>microservice-config-server-bus</module>
@@ -20,6 +21,7 @@
 		<module>microservice-config-server-pattern</module>
 		<module>microservice-config-server-encrypt</module>
 		<module>microservice-config-server-authc</module>
+		<module>microservice-cloud-eureka</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
