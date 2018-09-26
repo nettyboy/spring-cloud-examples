@@ -1,5 +1,8 @@
 spring:
   cloud:
+    bus:
+      trace:
+        enabled: true
     config:
       name: ${spring.application.name} #对应{application}
       profile: dev  #{profile}
@@ -10,7 +13,11 @@ spring:
         service-id: microservice-config-server-bus #[new] config-server-application-name
   application:
     name: microservice-config-client-bus
-
+#  kafka:
+#    bootstrap-servers:
+#    - 10.110.59.23:9092
+#    - 10.110.59.24:9092
+#    - 10.110.59.25:9092
   rabbitmq:
     host: 10.110.60.73
     port: 5672

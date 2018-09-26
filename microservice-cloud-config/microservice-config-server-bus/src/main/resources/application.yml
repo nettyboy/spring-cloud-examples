@@ -13,13 +13,18 @@ spring:
           username: nettyboy
           password: ningquan168
           force-pull: true 
-          delete-untracked-branches: true #避免删除git服务仓库，本地缓存不一致
+#          delete-untracked-branches: true #避免删除git服务仓库，本地缓存不一致
           clone-on-start: true #启动是否加载remote repo
           search-paths: '{application}'
     bus:
       trace:
         enabled: true #跟踪bus事件，这样在/bus/refresh端点被请求后，
 #                          #访问/trace，跟踪广播给那些端消息推送成功
+#  kafka:
+#    bootstrap-servers:
+#    - 10.110.59.23:9092
+#    - 10.110.59.24:9092
+#    - 10.110.59.25:9092
 #rbbitmq配置
   rabbitmq:
     host: 10.110.60.73
