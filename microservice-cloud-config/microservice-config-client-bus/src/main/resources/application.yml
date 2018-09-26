@@ -1,4 +1,4 @@
 server:
-  port: 9200
+  port: 9100
 
 management.security.enabled: false

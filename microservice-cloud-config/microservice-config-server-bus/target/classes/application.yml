@@ -12,10 +12,12 @@ spring:
           uri: https://github.com/nettyboy/spring-cloud-examples.git
           username: nettyboy
           password: ningquan168
-          force-pull: true 
+#          force-pull: true 
 #          delete-untracked-branches: true #避免删除git服务仓库，本地缓存不一致
           clone-on-start: true #启动是否加载remote repo
           search-paths: '{application}'
+          basedir: D:\\git-repository\\cloud-config
+            
     bus:
       trace:
         enabled: true #跟踪bus事件，这样在/bus/refresh端点被请求后，
