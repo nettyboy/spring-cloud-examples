@@ -4,14 +4,18 @@ server:
 #设置获取git仓库地址，应用名称
 spring:
   application:
-    name: microservice-config-server
+    name: microservice-config-server-bus
   cloud:
     config:
       server:
         git:
           uri: https://github.com/nettyboy/spring-cloud-examples.git
           username: nettyboy
-          password: xxxx
+          password: ningquan168
+          force-pull: true 
+          delete-untracked-branches: true #避免删除git服务仓库，本地缓存不一致
+          clone-on-start: true #启动是否加载remote repo
+          search-paths: '{application}'
     bus:
       trace:
         enabled: true #跟踪bus事件，这样在/bus/refresh端点被请求后，
@@ -33,5 +37,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7100/eureka/ 
-  instance:
-    appname: microservice-config-server

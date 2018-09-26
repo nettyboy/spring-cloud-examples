@@ -5,6 +5,8 @@ spring:
       profile: dev  #{profile}
       uri: http://localhost:8100 #如果添加spring-cloud-config-server地址，需要指定在bootstrap.yml中
       label: master
+      allow-override: true #default true
+      override-none: true #是否使用configserver override配置，默认false，直接从remote repo获取
   application:
     name: microserviceapp
     

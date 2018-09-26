@@ -3,7 +3,10 @@ server:
 spring:
   application:
     name: microservice-config-client-rabbit
-
+  cloud:
+    bus:
+      trace:
+        enabled: true
   rabbitmq:
     host: 10.110.60.73
     port: 5672

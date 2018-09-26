@@ -1,15 +1,15 @@
 spring:
   cloud:
     config:
-      name: test #对应{application}
+      name: ${spring.application.name} #对应{application}
       profile: dev  #{profile}
       #uri: http://localhost:8100 #如果添加spring-cloud-config-server地址，需要指定在bootstrap.yml中
       label: master
       discovery:
         enabled: true # [new]开启config服务发现的支持
-        service-id: microservice-config-server #[new] config-server-application-name
+        service-id: microservice-config-server-bus #[new] config-server-application-name
   application:
-    name: microservice-config-client
+    name: microservice-config-client-bus
 
   rabbitmq:
     host: 10.110.60.73

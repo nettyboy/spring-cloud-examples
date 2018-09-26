@@ -1,16 +1,16 @@
 spring:
+  application:
+    name: microservice-config-client-eureka
   cloud:
     config:
-      name: test #对应{application}
+      name: ${spring.application.name} #对应{application}
       profile: dev  #{profile}
       #uri: http://localhost:8100 #如果添加spring-cloud-config-server地址，需要指定在bootstrap.yml中
       label: master
       discovery:
         enabled: true # [new]开启config服务发现的支持
-        service-id: microservice-config-server #[new] config-server-application-name
-  application:
-    name: microservice-config-client-eureka
-    
+        service-id: microservice-config-server-eureka #[new] config-server-application-name
+
 eureka:
   client:
     service-url:

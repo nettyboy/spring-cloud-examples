@@ -1,11 +1,18 @@
 server:
   port: 8100
 spring:
+#  profiles:
+#    active: native configserver加载localconfig file
   application:
     name: microservice-config-server
   cloud:
     config:
       server:
+        health:
+#          enabled: true
+          repositories:
+            spring-cloud-examples:
+              label: master
         git:
           uri: https://github.com/nettyboy/spring-cloud-examples.git
           username: nettyboy
@@ -13,6 +20,7 @@ spring:
           force-pull: true
           clone-on-start: true
           delete-untracked-branches: true #避免删除git服务仓库，本地缓存不一致
+          search-paths: '{application}'
 #          search-paths:
 #          - microserviceapp
 eureka:
